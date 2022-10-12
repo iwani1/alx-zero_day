@@ -1,0 +1,47 @@
+root@c0cb19ebc562:/tmp# ls                                                                                                                              
+right_school  school  tmp.DAOEzJT0J6  tmp.dOKjikw0Ig  tmpztrs6ymg                                                                                       
+root@c0cb19ebc562:/tmp# cd ..                                                                                                                           
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev  home  lib32  libx32  mnt         not_here  proc  run   school   srv  tmp  var                                                                
+boot  etc  lib   lib64  media   new_school  opt       root  sbin  so_cool  sys  usr                                                                     
+root@c0cb19ebc562:/# mv not_here tmp/right_school                                                                                                       
+root@c0cb19ebc562:/# cd tmp                                                                                                                             
+root@c0cb19ebc562:/tmp# ls                                                                                                                              
+right_school  school  tmp.DAOEzJT0J6  tmp.dOKjikw0Ig  tmpztrs6ymg                                                                                       
+root@c0cb19ebc562:/tmp# cd right_school/                                                                                                                
+root@c0cb19ebc562:/tmp/right_school# ls                                                                                                                 
+not_here                                                                                                                                                
+root@c0cb19ebc562:/tmp/right_school# cd ..                                                                                                              
+root@c0cb19ebc562:/tmp# cd ..                                                                                                                           
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  new_school  opt  proc  root  run  sbin  school  so_cool  srv  sys  tmp  usr  var      
+root@c0cb19ebc562:/# touch ready_to_be_removed                                                                                                          
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev  home  lib32  libx32  mnt         opt   ready_to_be_removed  run   school   srv  tmp  var                                                     
+boot  etc  lib   lib64  media   new_school  proc  root                 sbin  so_cool  sys  usr                                                          
+root@c0cb19ebc562:/# rm ready_to_be_removed                                                                                                             
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  new_school  opt  proc  root  run  sbin  school  so_cool  srv  sys  tmp  usr  var      
+root@c0cb19ebc562:/# mkdir school_is_amazing                                                                                                            
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev  home  lib32  libx32  mnt         opt   root  sbin    school_is_amazing  srv  tmp  var                                                        
+boot  etc  lib   lib64  media   new_school  proc  run   school  so_cool            sys  usr                                                             
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev  home  lib32  libx32  mnt         opt   root  sbin    school_is_amazing  srv  tmp  var                                                        
+boot  etc  lib   lib64  media   new_school  proc  run   school  so_cool            sys  usr                                                             
+root@c0cb19ebc562:/# rm empty_directory                                                                                                                 
+rm: cannot remove 'empty_directory': No such file or directory                                                                                          
+root@c0cb19ebc562:/# mkdir empty_directory                                                                                                              
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev              etc   lib    lib64   media  new_school  proc  run   school             so_cool  sys  usr                                         
+boot  empty_directory  home  lib32  libx32  mnt    opt         root  sbin  school_is_amazing  srv      tmp  var                                         
+root@c0cb19ebc562:/# rm empty_directory                                                                                                                 
+rm: cannot remove 'empty_directory': Is a directory                                                                                                     
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev              etc   lib    lib64   media  new_school  proc  run   school             so_cool  sys  usr                                         
+boot  empty_directory  home  lib32  libx32  mnt    opt         root  sbin  school_is_amazing  srv      tmp  var                                         
+root@c0cb19ebc562:/# rm -rf empty_directory/                                                                                                            
+root@c0cb19ebc562:/# ls                                                                                                                                 
+bin   dev  home  lib32  libx32  mnt         opt   root  sbin    school_is_amazing  srv  tmp  var                                                        
+boot  etc  lib   lib64  media   new_school  proc  run   school  so_cool            sys  usr                                                             
+
